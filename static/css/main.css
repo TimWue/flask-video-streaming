@@ -1,0 +1,45 @@
+.title{
+    color:white;
+    font-family:monospace;
+    font-weight: bold;
+    font-size:40px;
+    margin-bottom: 5px;
+    margin-top: -3px;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.liveStream{
+    border-radius:5px;
+}
+
+.buttonContainer{
+    margin-top: 10px;
+}
+
+button{
+    padding: 5px;
+    background-color:black;
+    color:white;
+    border-style:none;
+    border-radius:5px;
+    font-size:18px;
+    font-family:monospace;
+    transition: 0.2s all;
+}
+
+button:hover{
+    background-color:gray;
+}
+button:active{
+    transform:scale(0.98);
+}
+
+body{
+    background-color: #383838;
+}

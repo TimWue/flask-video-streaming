@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BirdWatch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+<body>
+<div class="container">
+        <p class="title">Birdwatch</p>
+        <img src="{{ url_for('video_feed') }}" class="liveStream">
+    <div class="buttonContainer">
+        <button>Schnappschuss</button>
+        <button>Videoaufnahme</button>
+    </div>
+</div>
+</body>
+</html>
