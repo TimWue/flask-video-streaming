@@ -1,6 +1,6 @@
 from flask import Flask, render_template, Response
 import logging
-from camera_pi import Camera
+from camera_opencv import Camera
 #import threading
 
 
