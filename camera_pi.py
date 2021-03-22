@@ -11,10 +11,9 @@ class Camera(BaseCamera):
             # let camera warm up
             time.sleep(2)
             camera.resolution = (800,600)
-
+            camera.framerate = 30
             stream = io.BytesIO()
-            for _ in camera.capture_continuous(stream, 'jpeg',
-                                                 use_video_port=True):
+            for _ in camera.capture_continuous(stream, 'jpeg', use_video_port=True, splitter_port=3):
                 # return current frame
                 stream.seek(0)
                 yield stream.read()
